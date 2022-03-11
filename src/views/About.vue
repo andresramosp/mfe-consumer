@@ -1,17 +1,21 @@
 <template>
-  <HelloWorld msg="This is the container app" />
-  <router-view></router-view>
+  <div>
+    About Page
+    <MfeThree />
+  </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import MfeThree from "../microfes/MfeThree.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    MfeThree
   },
-  setup() {},
+  setup() {
+
+  }
 };
 </script>
 
