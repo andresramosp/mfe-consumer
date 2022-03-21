@@ -1,10 +1,10 @@
 <template>
-  <div id="root-mfetwo" />
+  <div id="root-mfelogin" />
 </template>
 
 <script>
 
-import { mount } from "MfeTwo/MfeTwo";
+import { mount } from "MfeLogin/MfeLogin";
 export default {
    components: {
   },
@@ -14,7 +14,7 @@ export default {
   },
 
   mounted() {
-    let root = document.getElementById('root-mfetwo');
+    let root = document.getElementById('root-mfelogin');
     mount(root)
   },
 };

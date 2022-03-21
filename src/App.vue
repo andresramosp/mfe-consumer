@@ -1,17 +1,27 @@
 <template>
-  <HelloWorld msg="This is the container app" />
-  <router-view></router-view>
+  <div>
+    <nav>
+      <router-link to="/home">Home</router-link> |
+      <router-link to="/map">Map</router-link>
+    </nav>
+    <MfeLogin />
+    <HelloWorld msg="Vue 3 + Module Federation" />
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
+import MfeLogin from "./microfes/MfeLogin.vue";
 
 export default {
   name: "App",
   components: {
     HelloWorld,
+    MfeLogin
   },
-  setup() {},
+  setup() {
+  },
 };
 </script>
 
@@ -22,6 +32,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 0px;
 }
 </style>

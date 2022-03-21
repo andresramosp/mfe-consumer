@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div style="border: solid 1px red">
+    <div style="border: solid 1px blue; padding: 20px; background-color: white">
       <MfeOne />
     </div>
-     <div style="border: solid 1px red">
+     <div style="border: solid 1px blue; padding: 20px; background-color: white">
       <MfeTwo @some-event="callback" />
     </div>
   </div>
@@ -21,7 +21,7 @@ export default {
   },
   setup() {
     let callback = () => {
-      alert('adios')
+      alert('Evento recibido en Consumer')
     }
     return { callback }
   }
@@ -29,12 +29,4 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
