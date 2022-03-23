@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav>
-      <router-link to="/home">Home</router-link> |
+      <router-link to="/">Home</router-link> |
       <router-link to="/map">Map</router-link>
     </nav>
     <MfeLogin />
