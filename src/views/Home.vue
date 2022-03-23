@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div style="border: solid 1px blue; padding: 20px; background-color: white">
+    <div style="border: solid 1px blue; padding: 20px; background-color: white; height: 550px">
       <MfeOne />
     </div>
     <div style="border: solid 1px blue; padding: 20px; background-color: white">
