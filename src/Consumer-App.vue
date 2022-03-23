@@ -6,7 +6,11 @@
     </nav>
     <MfeLogin />
     <HelloWorld msg="Vue 3 + Module Federation" />
-    <router-view></router-view>
+      <router-view v-slot="{ Component }">
+        <keep-alive>
+          <component :is="Component" />
+        </keep-alive>
+      </router-view>
   </div>
 </template>
 

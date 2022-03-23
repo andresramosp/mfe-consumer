@@ -18,25 +18,10 @@ module.exports = {
             singleton: true,
           },
           ...require('./package.json').dependencies
-          // moment: {
-          //   eager: true,
-          //   singleton: true,
-          // }
         },
         //shared: require('./package.json').dependencies,
       }),
     ],
   },
-  // chainWebpack: config => {
-  //   config.module
-  //     .rule('vue')
-  //     .use('vue-loader')
-  //     .tap(options => ({
-  //       ...options,
-  //       compilerOptions: {
-  //         // treat any tag that starts with ion- as custom elements
-  //         isCustomElement: tag => tag.startsWith('Prime-')
-  //       }
-  //     }))
-  // }
+
 };
