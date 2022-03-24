@@ -8,10 +8,11 @@ module.exports = {
         name: 'consumer',
         filename: 'remoteEntry.js',
         remotes: {
-          MfeOne: 'MfeOne@http://localhost:9999/remoteEntry.js',
-          MfeTwo: 'MfeTwo@http://localhost:9998/remoteEntry.js',
-          MfeThree: 'MfeThree@http://localhost:9997/remoteEntry.js',
-          MfeLogin: 'MfeLogin@http://localhost:9797/remoteEntry.js',
+          // MfeOne: 'MfeOne@http://localhost:9999/remoteEntry.js',
+          MfeOne: 'MfeOne@https://module-federation-mfe-one.herokuapp.com/remoteEntry.js',
+          MfeTwo: 'MfeTwo@https://module-federation-mfe-two.herokuapp.com/remoteEntry.js',
+          MfeThree: 'MfeThree@https://module-federation-mfe-three.herokuapp.com/remoteEntry.js',
+          MfeLogin: 'MfeLogin@https://module-federation-mfe-login.herokuapp.com/remoteEntry.js',
         },
         shared: {
           vue: {
