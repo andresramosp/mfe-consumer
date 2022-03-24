@@ -1,7 +1,7 @@
 const ModuleFederationPlugin = require('webpack').container.ModuleFederationPlugin;
 
 module.exports = {
-  publicPath: 'http://localhost:8080/',
+  publicPath: 'https://module-federation-mfe-consumer.herokuapp.com/',
   configureWebpack: {
     plugins: [
       new ModuleFederationPlugin({
