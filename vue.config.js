@@ -9,8 +9,11 @@ module.exports = {
   configureWebpack: {
     plugins: [
       new ModuleFederationPlugin({
-        name: 'consumer',
+        name: 'Shell',
         filename: 'remoteEntry.js',
+        exposes: {
+          './clientApi': './src/clientApi',
+        },
         remotes: process.env.VUE_APP_REMOTES === 'local' ?
           // DEVELOPMENT
           {
@@ -18,6 +21,7 @@ module.exports = {
             MfeTwo: 'MfeTwo@http://localhost:9998/remoteEntry.js',
             MfeThree: 'MfeThree@http://localhost:9997/remoteEntry.js',
             MfeLogin: 'MfeLogin@http://localhost:9797/remoteEntry.js',
+            Shell: 'Shell@http://localhost:8080/remoteEntry.js'
           } :
           // PRODUCTION
           {

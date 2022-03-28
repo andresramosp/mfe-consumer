@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import { createWebHashHistory, createRouter } from "vue-router";
-import App from './Consumer-App.vue'
+import App from './App.vue'
 
 const routes = [
     { path: '/', component: () => import('@/views/Home.vue') },

@@ -33,7 +33,7 @@ export default {
   },
   setup() {
     let callback = () => {
-      alert("Evento recibido en Consumer");
+      alert("Evento recibido en Shell");
     };
     return { callback };
   },
