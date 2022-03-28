@@ -5,7 +5,7 @@
       <router-link to="/map">Map</router-link>
     </nav>
     <MfeLogin />
-    <HelloWorld msg="Shell APP (Vue 3 + Typescript + Module Federation)" />
+    <HelloWorld msg="Shell App (Vue 3 + Typescript + Module Federation)" />
     <router-view v-slot="{ Component }">
       <keep-alive>
         <component :is="Component" />
