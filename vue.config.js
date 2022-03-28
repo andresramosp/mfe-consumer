@@ -20,8 +20,7 @@ module.exports = {
             MfeOne: 'MfeOne@http://localhost:9999/remoteEntry.js',
             MfeTwo: 'MfeTwo@http://localhost:9998/remoteEntry.js',
             MfeThree: 'MfeThree@http://localhost:9997/remoteEntry.js',
-            MfeLogin: 'MfeLogin@http://localhost:9797/remoteEntry.js',
-            Shell: 'Shell@http://localhost:8080/remoteEntry.js'
+            MfeLogin: 'MfeLogin@http://localhost:9797/remoteEntry.js'
           } :
           // PRODUCTION
           {
