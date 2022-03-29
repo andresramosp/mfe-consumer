@@ -30,10 +30,13 @@ module.exports = {
             MfeLogin: 'MfeLogin@https://module-federation-mfe-login.herokuapp.com/remoteEntry.js',
           },
         shared: {
+          ...require('./package.json').dependencies,
           vue: {
             singleton: true,
           },
-          ...require('./package.json').dependencies
+          'element-plus': {
+            singleton: true
+          }
         },
       }),
     ],
