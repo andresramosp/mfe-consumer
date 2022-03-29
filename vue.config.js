@@ -34,6 +34,9 @@ module.exports = {
           vue: {
             singleton: true,
           },
+          'vue-router': {
+            singleton: true,
+          },
           'element-plus': {
             singleton: true
           }
