@@ -12,7 +12,8 @@ module.exports = {
         name: 'Shell',
         filename: 'remoteEntry.js',
         exposes: {
-          './clientApi': './src/clientApi',
+          './clientApiOne': './src/clients/apiOne',
+          './clientApiTwo': './src/clients/apiTwo',
         },
         remotes: process.env.VUE_APP_REMOTES === 'local' ?
           // DEVELOPMENT

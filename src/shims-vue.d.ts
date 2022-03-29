@@ -4,4 +4,6 @@ declare module '*.vue' {
   const component: DefineComponent<{}, {}, any>
   export default component
 }
-declare module 'Shell/clientApi'
+declare module 'Shell/clientApiOne'
+declare module 'Shell/clientApiTwo'
+
