@@ -1,5 +1,5 @@
 <template>
-  <div style="border: solid 1px blue; background-color: white">
+  <div class="mfe-container">
     <MfeThree />
   </div>
 </template>

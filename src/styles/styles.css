@@ -1,0 +1,48 @@
+.my-blue-class {
+    color: blue;
+}
+.not-logged {
+    background-color: pink;
+    width: 100px;
+  }
+.logged {
+    background-color: greenyellow;
+    width: 385px;
+  }
+.mfe-container {
+    border: solid 2px blueviolet; 
+    padding: 20px; 
+    background-color: white;
+  }
+.shared-comp {
+    padding: 15px;
+    background-color: lightgray;
+    width: 90%;
+}
+.shared-comp-2 {
+    padding: 15px;
+    background-color: lightseagreen;
+    width: 90%;
+    min-height: 199px;
+}
+#app {
+    font-family: cursive;
+    font-size: 17px
+}
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: dimgray;
+    margin: 15px
+}
+a {
+    background-color: lightblue;
+}
+body {
+    background-color: lightgray;
+    padding: 15px;
+}
+.moment-time {
+    right: 50px;
+    margin-top: -50px;
+    position: absolute;
+}

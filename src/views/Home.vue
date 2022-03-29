@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div style="border: solid 1px blue; padding: 20px; background-color: white;">
+    <div class="mfe-container">
       <MfeOne />
     </div>
-    <div style="border: solid 1px blue; padding: 20px; background-color: white">
+    <div class="mfe-container" style="margin-top: 20px">
       <MfeTwo @some-event="callback" />
     </div>
   </div>

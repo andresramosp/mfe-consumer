@@ -2,7 +2,7 @@ const ModuleFederationPlugin = require('webpack').container.ModuleFederationPlug
 
 module.exports = {
   publicPath: process.env.VUE_APP_REMOTES === 'local' ?
-   // DEVELOPMENT
+    // DEVELOPMENT
     'http://localhost:8080/' :
     // PRODUCTION
     'https://module-federation-mfe-consumer.herokuapp.com/',
@@ -14,6 +14,7 @@ module.exports = {
         exposes: {
           './clientApiOne': './src/clients/apiOne',
           './clientApiTwo': './src/clients/apiTwo',
+          // './styles': './src/styles/styles.css',
         },
         remotes: process.env.VUE_APP_REMOTES === 'local' ?
           // DEVELOPMENT
@@ -44,6 +45,17 @@ module.exports = {
         },
       }),
     ],
+    module: {
+      rules: [
+        {
+          test: /\.scss$/,
+          use: [
+            'vue-style-loader',
+            'css-loader',
+            'sass-loader'
+          ]
+        }
+      ]
+    },
   },
-
 };

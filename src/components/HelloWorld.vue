@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <h4>[ClientApi 1, ClientApi 2, Style Guide]</h4>
   </div>
 </template>
 
@@ -15,8 +16,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+h4 {
+  color: gray;
+    font-size: 16px;
+    margin: 15px;
 }
 ul {
   list-style-type: none;
